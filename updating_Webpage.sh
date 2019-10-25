@@ -11,11 +11,14 @@ ur (0 - 23)
 # │ │ │ │ │
 # │ │ │ │ │
 # * * * * * command to execute
-30 *  *  *  */path/to command
+20 * * * * /bin/echo/ " i am running updating_webpage.sh " logger
 
-30   17 * * * /path/to/command # will run at 5.30 p 
+20 * * * * /root/ updating_webpage.sh
+
+
  
-00   6 * * 3  /path/to 
+ 
+
 ~                                                                                                                  
 ~                                                                                                                  
 ~                                                                                                                  
