@@ -48,6 +48,6 @@ django_install()
 django_start()
 
 adduser -M django3
-chown -R django3 /opt/djano
+chown -R django3 /opt/django
 usermod -L django3
 
