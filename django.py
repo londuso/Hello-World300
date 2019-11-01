@@ -23,7 +23,7 @@ def django_install():
 
 def django_start():
   print('starting django')
-  os.system('chown -R fuumujin /opt/django')
+  os.system('chown -R londuso /opt/django')
   os.chdir('opt/django/project1')
   os.system('source /opt/django/django-env/bin/activate ' + \
       '&& python manage.py migrate')
@@ -41,7 +41,7 @@ def django_start():
   with open('project1/settings.py', "w") as f:
     f.write(newText)
       
-    os.system('sudo -u fuumujin sh -c "source /opt/django/django-env/bin/activate && python manage.py runserver 0.0.0.0:8000&"')
+    os.system('sudo -u londuso sh -c "source /opt/django/django-env/bin/activate && python manage.py runserver 0.0.0.0:8000&"')
     
 setup_install()
 django_install()
