@@ -10,7 +10,7 @@ def setup_install():
   os.mkdir('/opt/django')
   os.chdir('/opt/django')
   os.system('virutalenv django-env')
-  os.system('chown -R fuumujin /opt/django') # We're using shell, because the python builtin chown doesn't work as well
+  os.system('chown -R londuso /opt/django') # We're using shell, because the python builtin chown doesn't work as well
   
 def django_install():
   print('activating virtualenv and installing django after pre-requirements have been met') # You must activate the virtualenv shell every time
