@@ -1,0 +1,5 @@
+#!/bin/bash
+https://github.com/londuso/Hello-World300/new/master
+cd Hello-300
+git  config global.username "londuso"
+git  config globaluser.email Lameck.onduso@seattlecolleges.edu
