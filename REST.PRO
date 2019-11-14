@@ -9,7 +9,7 @@ credentials =GoogleCredentials.get_application_default()
 compute = discovery.build('compute', 'v1', credentials=credentials)
 
 project = 'nti-300-2019'
-zone    = 'us-central1-a'
+zone    = 'us-pacific-a'
 name    ='test3'
 
 def list_instance (compute.instances().list(project=project, zone=zone).execute()
