@@ -22,7 +22,7 @@ def setup_install():
 
     os.system('virtualenv django-env')
 
-    os.system('chow -R yalixue468 /opt/django')    # we're useing shell, because the python builtin chown doesn't work as well
+    os.system('chow -R londuso /opt/django')    # we're useing shell, because the python builtin chown doesn't work as well
 
 def django_install():
 
