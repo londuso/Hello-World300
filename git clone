@@ -1,0 +1,7 @@
+ yum -y install git
+
+git config --global user.name "londuso"
+
+git confit --global user.email londuso35@gmail.com
+
+git clone https://github.com/londuso/Hello-World300/new/master
