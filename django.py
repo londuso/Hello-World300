@@ -20,6 +20,14 @@ def django_install():
   os.system('source /opt/django/django-env/bin/activate ' + \
        '&& django-admin --version ' + \
        '&& django-admin startproject project1')
+  
+          os. system('adduser -M django3')
+          os. system('chown -R django3 /opt/django')
+          os. system('usermod -L django3')
+
+
+  
+  
 
 def django_start():
   print('starting django')
