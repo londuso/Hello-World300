@@ -5,5 +5,5 @@ fi
 yum -y install wget
 wget https://github.com/londuso/Hello-World300/new/master
 for packages in $(cat packages.txt);do
-    yum -y install $ packages
+    yum -y install $packages
 done
