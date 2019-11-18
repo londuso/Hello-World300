@@ -6,9 +6,9 @@ pip install virtualenv
 
 pip install --upgrade pip
 
-mkdir ~/newproject
+mkdir ~/project1
 
-cd ~/newproject
+cd ~/project1
 
 virtualenv newenv
 
