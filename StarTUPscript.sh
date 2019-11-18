@@ -8,7 +8,7 @@ import json
 credentials =GoogleCredentials.get_application_default()
 compute = discovery.build('compute', 'v1', credentials=credentials)
 
-project = 'nti-300-2019'
+project = 'Startup-script.sh'
 zone    = 'us-pacific-a'
 name    ='test3'
 
