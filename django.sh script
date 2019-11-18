@@ -34,6 +34,6 @@ myip=$(curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.
 
 echo $myip
 
-sed -i "s/ALLOWED_HOSTS = \[\]/ALLOWED_HOSTS = \[\'$myip\'\]/g" newproject/settings.py 
+sed -i "s/ALLOWED_HOSTS = \[\]/ALLOWED_HOSTS = \[\'$myip\'\]/g" project1/settings.py 
 
 pythonmanage.py runserver 0.0.0.0:8000
