@@ -28,7 +28,7 @@ compute = discovery.build('compute', 'v1', credentials=credentials)
 
 
 
-project = 'mystic-stack-254202'
+project = 'ubbeat-aura254203'
 
 zone = 'us-central1-a'
 
