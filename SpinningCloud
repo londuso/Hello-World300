@@ -8,7 +8,7 @@ import json
 credentials =GoogleCredentials.get_application_default()
 compute = discovery.build('compute', 'v1', credentials=credentials)
 
-project = 'Startup-script.sh'
+project = 'upbeat-aura-254203'
 zone    = 'us-pacific-a'
 name    ='test3'
 
