@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 
-
+# another change
 #this should be run from the google cloud shell
 
 #startup-script.sh must be in the same dir
@@ -28,7 +28,7 @@ compute = discovery.build('compute', 'v1', credentials=credentials)
 
 
 
-project = 'ubbeat-aura254203'
+project = 'upbeat-aura-254203'
 
 zone = 'us-central1-a'
 
