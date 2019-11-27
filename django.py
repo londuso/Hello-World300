@@ -9,8 +9,7 @@ def setup_install():
   os.chdir('/opt')
   os.mkdir('/opt/django')
   os.chdir('/opt/django')
-  os.system('virutalenv django-env')
-  os.system('chown -R londuso /opt/django') # We're using shell, because the python builtin chown doesn't work as well
+  os.system('virtualenv django-env')
   
 def django_install():
   print('activating virtualenv and installing django after pre-requirements have been met') # You must activate the virtualenv shell every time
@@ -28,7 +27,7 @@ def django_install():
 def django_start():
   print('starting django')
   os.system('chown -R londuso /opt/django')
-  os.chdir('opt/django/project1')
+  os.chdir('/opt/django/project1')
   os.system('source /opt/django/django-env/bin/activate ' + \
       '&& python manage.py migrate')
   os.system('source /opt/django/django-env/bin/activate && echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser(\'admin\', \'admin@newproject.com\', \P@$$w0rd1\')" | python manage.py shell')
@@ -45,7 +44,7 @@ def django_start():
   with open('project1/settings.py', "w") as f:
     f.write(newText)
       
-    os.system('sudo -u londuso sh -c "source /opt/django/django-env/bin/activate && python manage.py runserver 0.0.0.0:8000&"')
+    os.system('sudo -u django3 sh -c "source /opt/django/django-env/bin/activate && python manage.py runserver 0.0.0.0:8000&"')
     
 setup_install()
 django_install()
